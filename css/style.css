@@ -1,0 +1,279 @@
+@import url("https://use.typekit.net/mvv6xqf.css");
+.poppins {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ===== ESTILIZAÇÕES GERAIS ===== */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: #0d112b;
+}
+
+/* CABEÇALHO */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 5em;
+    min-height: 10vh;
+}
+
+header p{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #0d112b;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    border-radius: .2em;
+    transition: .2s ease;
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: #0d112b;
+}
+
+/* RODAPÉ */
+.rodape{
+    background-color: #0d112b;
+    color: white;
+    text-align: center;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ===== INDEX ===== */
+/* BANNER */
+.banner{
+    background-image: url("../css/img/bg2.gif");
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    height: 40em;
+}
+
+.b_container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+}
+
+.banner_content{
+    background: white;
+    display: flex;
+}
+
+.banner_title h2{
+    font-size: 2em;
+}
+.banner_title legend{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.banner_content_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5em;
+}
+
+.banner_content_txt ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+.p_title{
+    font-weight: 600;
+}
+
+#v_flex a{
+    text-decoration: none;
+    color: #0d112b;
+    font-weight: 600;
+}
+
+.bottom_banner{
+    background-color: #0d112b;
+    padding: 1em 0;
+}
+
+.bottom_banner ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.bottom_banner .icon{
+    width: 2.5em;
+    transition: transform .2s ease-out;
+}
+.bottom_banner .icon:hover{
+    transform: scale(1.1);
+}
+
+#icon_lattes{
+    filter: grayscale(1) invert(1) brightness(2.5) contrast(1);
+}
+
+/* SOBRE MIM */
+.description{
+    margin: 7em auto 4em auto;
+    width: 65%;
+    text-align: center;
+}
+
+.d_title{
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+.d_txt{
+    font-size: 1.2em;
+    line-height: 2.2;
+}
+
+/* CARDS */
+.info{
+    background-color: rgb(236, 236, 236);
+    padding: 5em 0;
+    text-align: center;
+}
+
+.cards_container{
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+.card{
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 1em;
+    box-shadow: -7px 7px;
+    padding: 2em;
+    background-color: white;
+}
+
+.card_title{
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.card_list{
+    list-style: none;
+    font-size: 1.1em;
+    margin-top: .67em;
+    line-height: 2;
+    color: rgb(73, 73, 73);
+}
+
+.see_more{
+    margin-top: 3em;
+    text-transform: uppercase;
+}
+
+.see_more a{
+    text-decoration: none;
+    color: white;
+    background-color: #0d112b;
+    padding: .4em .6em;
+    border-radius: .5em;
+    border: 5px solid #0d112b;
+    transition: .2s ease-out;
+}
+
+.see_more a:hover{
+    color: #0d112b;
+    background-color: transparent;
+}
+
+/* ===== CONTATO ===== */
+.main_contact{
+    background-image: url("../css/img/bg2.gif");
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_contato{
+    background-color: white;
+    padding: 3em;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.form_line,
+.form_line textarea{
+    font-size: 1.3em;
+}
+
+.form_line input,
+.form_line textarea{
+    width: 100%;
+    padding: .2em;
+    color: rgb(67, 67, 67);
+}
+
+.form_line input{
+    font-size: 1em;
+}
+
+.form_line textarea{
+    height: 6em;
+    resize: none;
+    margin: auto;
+}
+
+.btn_submit{
+    font-size: 1.2em;
+    color: white;
+    background-color: #0d112b;
+    width: 40%;
+    padding: .7em 0;
+    margin: auto;
+    border: 5px solid #0d112b;
+    border-radius: .5em;
+    transition: .2s ease-out;
+}
+.btn_submit:hover{
+    color: #0d112b;
+    background-color: transparent;
+    cursor: pointer;
+}
