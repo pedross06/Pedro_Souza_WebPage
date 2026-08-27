@@ -31,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0em 5em;
+    padding: 0em 5%;
     min-height: 10vh;
 }
 
@@ -91,7 +91,7 @@ header p {
     transition: 0.3s;
 }
 
-/* responsividade - cabeçalho */
+/* CABEÇALHO - responsividade */
 @media (max-width: 999px) {
     body.menu-open {
         overflow: hidden;
@@ -137,6 +137,12 @@ header p {
     }
 }
 
+@media (max-width: 440px) {
+    .logo {
+        font-size: 2em;
+    }
+}
+
 /* RODAPÉ */
 .rodape {
     background-color: #0d112b;
@@ -169,6 +175,11 @@ header p {
 .banner_content {
     background: white;
     display: flex;
+}
+
+.banner_content img {
+    aspect-ratio: 6 / 7;
+    object-fit: cover;
 }
 
 .banner_title h2 {
@@ -218,12 +229,14 @@ header p {
     display: flex;
     text-align: center;
     justify-content: center;
+    align-items: center;
     gap: 3em;
 }
 
 .bottom_banner .icon {
     width: 2.5em;
     transition: transform .2s ease-out;
+    vertical-align: middle;
 }
 
 .bottom_banner .icon:hover {
@@ -254,13 +267,14 @@ header p {
 /* CARDS */
 .info {
     background-color: rgb(236, 236, 236);
-    padding: 5em 0;
+    padding: 5% 0;
     text-align: center;
 }
 
 .cards_container {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     gap: 4%;
 }
 
@@ -304,6 +318,130 @@ header p {
 .see_more a:hover {
     color: #0d112b;
     background-color: transparent;
+}
+
+@media (max-width: 1125px) {
+    .cards_container {
+        gap: 2%;
+    }
+
+    .card {
+        padding: 1.5em;
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 950px) {
+    .banner {
+        height: 30em;
+    }
+
+    .banner_content img {
+        width: 20em;
+    }
+
+    .banner_content_txt {
+        font-size: .8em;
+        padding: 0 3em;
+        width: 20em;
+    }
+
+    .cards_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .card{
+        width: 50%;
+    }
+}
+
+@media (max-width: 699px) {
+    .banner {
+        height: 25em;
+    }
+
+    .banner_content img {
+        width: 15em;
+    }
+
+    .banner_content_txt {
+        font-size: .8em;
+        padding: 1em 3em;
+        width: 20em;
+    }
+
+    .bottom_banner {
+        padding: .7em 0;
+    }
+
+    .bottom_banner .icon {
+        width: 2em;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    .card{
+        width: 70%;
+    }
+}
+
+@media (max-width: 615px) {
+    .banner {
+        height: 40em;
+    }
+
+    .b_container {
+        bottom: -150px;
+        width: 25em;
+    }
+
+    .banner_content {
+        flex-direction: column;
+    }
+
+    .banner_content img {
+        width: 100%;
+        height: 22em;
+    }
+
+    .info{
+        padding-bottom: 5em;
+    }
+
+    .description {
+        margin: 13em auto 4em auto;
+        font-size: .9em;
+    }
+
+    .d_txt {
+        text-align: justify;
+    }
+}
+
+@media (max-width: 440px) {
+    .b_container {
+        bottom: -50px;
+        width: 20em;
+    }
+
+    .banner_content img {
+        height: 17em;
+        object-position: center -20px;
+    }
+
+    .banner_content_txt {
+        width: 100%;
+        padding: 1em 1.5em;
+    }
+
+    .description {
+        margin: 7em auto 4em auto;
+        font-size: .83em;
+    }
 }
 
 /* ===== PORTFOLIO ===== */
