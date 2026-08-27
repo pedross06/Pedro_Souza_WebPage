@@ -320,7 +320,7 @@ header p {
     background-color: transparent;
 }
 
-@media (max-width: 1125px) {
+@media screen and (max-width: 1125px) {
     .cards_container {
         gap: 2%;
     }
@@ -331,7 +331,7 @@ header p {
     }
 }
 
-@media (max-width: 950px) {
+@media screen and (max-width: 950px) {
     .banner {
         height: 30em;
     }
@@ -357,7 +357,7 @@ header p {
     }
 }
 
-@media (max-width: 699px) {
+@media screen and (max-width: 699px) {
     .banner {
         height: 25em;
     }
@@ -389,7 +389,7 @@ header p {
     }
 }
 
-@media (max-width: 615px) {
+@media screen and (max-width: 615px) {
     .banner {
         height: 40em;
     }
@@ -422,7 +422,7 @@ header p {
     }
 }
 
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
     .b_container {
         bottom: -50px;
         width: 20em;
