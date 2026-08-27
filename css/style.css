@@ -237,6 +237,67 @@ header p{
     background-color: transparent;
 }
 
+/* ===== PORTFOLIO ===== */
+.portfolio_list{
+    margin-bottom: 5em;
+}
+
+.portfolio_topic{
+    display: flex;
+    padding: 5em 20em;
+    gap: 5em;
+}
+
+.p_pic{
+    width: 22em;
+    aspect-ratio: 1/1;
+}
+
+.pt_blue{
+    background-color: #0d112b;
+    color: white;
+}
+
+.pt_blue .p_pic{
+    box-shadow: -7px 7px;
+}
+
+.pt_white{
+    background-color: rgb(240, 240, 240);
+}
+
+.pt_white .p_pic{
+    box-shadow: 7px 7px;
+}
+
+.p_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p_txt h2{
+    font-size: 2.5em;
+}
+
+.p_txt p{
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.access{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.access a{
+    text-decoration: none;
+    background-color: white;
+    border: #0d112b 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+}
+
 /* ===== CONTATO ===== */
 .main_contact{
     background-image: url("../css/img/bg2.gif");
