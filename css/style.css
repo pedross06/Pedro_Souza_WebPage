@@ -92,7 +92,7 @@ header p {
 }
 
 /* CABEÇALHO - responsividade */
-@media (max-width: 999px) {
+@media screen and (max-width: 999px) {
     body.menu-open {
         overflow: hidden;
 
@@ -137,7 +137,7 @@ header p {
     }
 }
 
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
     .logo {
         font-size: 2em;
     }
