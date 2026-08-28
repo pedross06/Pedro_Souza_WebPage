@@ -352,7 +352,7 @@ header p {
         gap: 2em;
     }
 
-    .card{
+    .card {
         width: 50%;
     }
 }
@@ -384,7 +384,7 @@ header p {
         width: 80%;
     }
 
-    .card{
+    .card {
         width: 70%;
     }
 }
@@ -408,7 +408,7 @@ header p {
         height: 22em;
     }
 
-    .info{
+    .info {
         padding-bottom: 5em;
     }
 
@@ -457,7 +457,8 @@ header p {
 
 .p_pic {
     width: 22em;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .pt_blue {
@@ -564,4 +565,26 @@ header p {
     color: #0d112b;
     background-color: transparent;
     cursor: pointer;
+}
+
+/* FORMULÁRIO - responsividade */
+@media screen and (max-width: 550px) {
+    .form_contato {
+        padding: 2em;
+        gap: 1.5em;
+    }
+
+    .form_line,
+    .form_line textarea {
+        font-size: 1em;
+    }
+
+    .form_line input {
+        font-size: .9em;
+    }
+
+    .btn_submit {
+        font-size: 1em;
+        padding: .5em 0;
+    }
 }
