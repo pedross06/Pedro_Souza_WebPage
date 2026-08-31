@@ -17,7 +17,11 @@ body {
     overflow-x: hidden;
 }
 
-.bf_toggle{
+body.menu-open {
+    overflow: hidden;
+}
+
+.bf_toggle {
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 10vh;
@@ -50,7 +54,7 @@ header p {
     font-weight: 400;
 }
 
-.logo{
+.logo {
     position: relative;
     z-index: 7;
 }
@@ -110,10 +114,6 @@ header p {
 
 /* CABEÇALHO - responsividade */
 @media screen and (max-width: 999px) {
-    body.menu-open {
-        overflow: hidden;
-    }
-
     .mobile_menu {
         display: block;
         cursor: pointer;
@@ -526,7 +526,6 @@ header p {
     background-image: url("../css/img/bg2.gif");
     background-size: contain;
     background-position: center;
-    position: relative;
     min-height: 80vh;
     display: flex;
     justify-content: center;
