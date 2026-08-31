@@ -4,6 +4,7 @@ class MobileNavbar {
     this.navList = document.querySelector(navList);
     this.navLinks = document.querySelectorAll(navLinks);
     this.activeClass = "active";
+    const bg_fade = document.getElementById('bg_fade');
 
     this.handleClick = this.handleClick.bind(this);
   }
@@ -13,6 +14,7 @@ class MobileNavbar {
     this.mobileMenu.classList.toggle(this.activeClass);
 
     document.body.classList.toggle("menu-open");
+    bg_fade.classList.toggle("bf_toggle");
   }
 
   addClickEvent() {
