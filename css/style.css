@@ -602,3 +602,19 @@ header p {
         padding: .5em 0;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .form_line,
+    .form_line textarea {
+        font-size: .9em;
+    }
+
+    .form_line input {
+        font-size: .8em;
+    }
+
+    .btn_submit {
+        font-size: .9em;
+        padding: .4em 0;
+    }
+}
